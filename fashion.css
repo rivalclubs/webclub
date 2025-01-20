@@ -9,8 +9,8 @@ body {
 header h1 {
     font-size: 148px;
     text-align: center;
-    font-family: "Racing Sans One", serif;
-    line-height: 0.625;
+    font-family: "Bayon", serif;
+    line-height: 0.8;
     margin: 120px auto;
 }
 .links {
@@ -145,6 +145,6 @@ a {
     }
 
     .links {
-        top: 225px;
+        top: 315px;
     }
 }
