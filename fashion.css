@@ -127,4 +127,19 @@ a {
         margin-top: 60px;
         margin-bottom: 160px;
     }
+
+    .video-background {
+        display: none;
+    }
+
+    .video-bg-wrapper{
+        background-image: url(./bg.jpeg);
+        background-size: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        width: 100%;
+    }
 }
