@@ -1,6 +1,13 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/Oswald-RegularItalic_78effad58d577865c3bb80e19b95633d.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
 body {
     background: #000;
-    color: #d8beff;
+    color: #f6ec13;
     font-weight: 400;
     font-style: normal;
     font-family: "Xanh Mono", serif;
@@ -9,10 +16,46 @@ body {
 header h1 {
     font-size: 148px;
     text-align: center;
-    font-family: "Bayon", serif;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
     line-height: 0.8;
     margin: 120px auto;
 }
+
+header h1 span {
+    display: block;
+    letter-spacing: -0.02em;
+}
+
+header h1 .line1 {
+    letter-spacing: -0.02em;
+}
+
+header h1 .line2 {
+    letter-spacing: -0.02em;
+}
+
+.video-section {
+    width: 33.3%;
+    margin: 0 auto 60px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 .links {
     margin: 0 auto;
     text-align: left;
@@ -99,6 +142,19 @@ form button {
     bottom: 0;
 }
 
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('EndlessOrderFiltered.jpg');
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: multiply;
+    opacity: 0.7;
+}
+
 .content {
     width: 33.3%;
     margin: 0 auto;
@@ -111,6 +167,11 @@ a {
 @media (max-width: 996px) {
     .content {
         width: 100%;
+    }
+
+    .video-section {
+        width: 90%;
+        margin-bottom: 40px;
     }
 
     .links {
@@ -139,6 +200,11 @@ a {
 }
 
 @media (max-width: 480px) {
+    .video-section {
+        width: 95%;
+        margin-bottom: 30px;
+    }
+
     header h1 {
         width: 320px;
         font-size: 90px;
